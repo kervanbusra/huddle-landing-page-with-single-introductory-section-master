@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* width: 100%;
+    height: 100vh; */
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+h2,
+span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.wrapper {
+  background-color: hsl(257, 40%, 49%);
+  display: flex;
+  justify-content: center;
+  background-image: url(./images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: 100% 50%;
+  align-items: center;
+  
+}
+
+.container {
+  width: 350px;
+  padding: 40px;
+}
+
+.container span {
+  font-size: 30px;
+}
+
+.image {
+  margin: 50px 0;
+}
+.image img {
+  width: 300px;
+}
+
+.container__item-2 {
+  text-align: center;
+}
+
+.text {
+  margin: 20px 0;
+  line-height: 30px;
+  letter-spacing: 0.9px;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+button {
+  width: 250px;
+  height: 40px;
+  border-radius: 30px;
+  border-style: none;
+  color: hsl(257, 40%, 49%);
+}
+.icon-bottom {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 70px;
+}
+
+.icon-bottom > .facebook,
+.twitter,
+.instagram {
+  border: 1px solid white;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    background-image: url(./images/bg-desktop.svg);
+    height: 100vh;
+    background-size: unset;
+  }
+  .container {
+    display: flex;
+    width: 1200px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .container__item-1 {
+    width: 600px;
+  }
+  .container__item-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 566px;
+    text-align: start;
+    position: relative;
+  }
+
+  .image img {
+    width: 600px;
+  }
+
+  button {
+    width: 200px;
+    height: 50px;
+  }
+
+  .icon-bottom {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 120px;
+    bottom: 15px;
+    right: 15px;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+  }
+  .twitter:hover {
+    border-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+  }
+}
